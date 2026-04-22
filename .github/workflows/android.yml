@@ -11,9 +11,12 @@ jobs:
         with: {distribution: temurin, java-version: 17}
       - run: npm install
       - run: mkdir -p dist && cp -r *.html *.js *.css assets dist/ 2>/dev/null || true
+      - run: mkdir -p dist && cp -r *.html *.js *.css assets dist/ 2>/dev/null || true
       - run: npm install -g @capacitor/cli
       - run: mkdir -p dist && cp -r *.html *.js *.css assets dist/ 2>/dev/null || true
+      - run: mkdir -p dist && cp -r *.html *.js *.css assets dist/ 2>/dev/null || true
       - run: npm install @capacitor/core @capacitor/android
+      - run: mkdir -p dist && cp -r *.html *.js *.css assets dist/ 2>/dev/null || true
       - run: mkdir -p dist && cp -r *.html *.js *.css assets dist/ 2>/dev/null || true
       - run: npx cap init LMWSA com.lmwsa.app --web-dir dist
       - run: npx cap add android
